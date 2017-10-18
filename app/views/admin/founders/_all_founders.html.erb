@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <%= t 'admin.Founder'%>
+        <%= link_to '<i class="fa fa-plus"></i> Add New User'.html_safe, new_admin_founder_path, class: "btn btn-default pull-right add-btn" %>
+      </div>
+      <div class="panel-body">
+        <div class="dataTable_wrapper">
+          <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+            <thead>
+                <tr>
+                    <th>All Founder</th>
+                    <th>Name</th>
+                    <th>About</th>
+                    <th class="text-center">Actions</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+
+              <% @admin_founders.each_with_index do |founder,index| %>
+
+                <tr class="odd gradeX">
+                  <td><%= index+1 %></td>
+                  <td><%= founder.name %></td>
+                  <td class="text-center">
+                      <span>
+                      <%= link_to '', edit_founder_user_path(founder) ,class: "edit fa fa-edit icon_link with-tip no-text", title: "edit"%>&nbsp; &nbsp;
+                      </span>
+                      <span>
+                     
+                      <%= link_to '',  admin_founder_path(founder), method: :delete, data: { confirm: 'Are you sure?' } ,class: "delete fa fa-trash icon_link with-tip no-text" , title: "delete" %>
+                          
+                      </span>
+                  </td>
+                </tr>
+              <%end%>                                                                             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

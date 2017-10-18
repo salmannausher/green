@@ -1,0 +1,152 @@
+/* ======== Responsive ==============*/
+@media (max-width: 1000px) {
+	header .navbar-nav > li {
+	    margin: 0 10px;
+	}
+	.captionText {
+		font-size: 14px;
+	}
+	.captionText h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.captionText p {
+		margin-bottom: 5px;
+	}
+	.we_know_hawaii h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 991px) {
+	header .navbar-nav > li > a {
+		font-size: 12px;
+		padding-top: 9px;
+	}
+	.logo {
+	    max-width: 150px;
+	}
+	.site-header .col-md-3 {
+		width: 30%;
+		float: left;
+	}
+	.site-header .col-md-9 {
+		width: 70%;
+		float: left;
+	}
+	.section h3 {
+		font-size: 25px;
+	}
+	.site-header .logo {
+		margin-top: 8px;
+	}
+	.our_projects li .project_pic:first-child, .our_projects li .project_pic:last-child, .our_projects li:nth-child(2n) .project_pic:first-child, .our_projects li:nth-child(2n) .project_pic:last-child {
+		padding-right: 0;
+		width: 100%;
+	}
+	.our_projects li .project_pic .projectsAsBG {
+		margin-bottom: 20px;
+	}
+	.our_projects .borderButton {
+		display: table;
+	}
+	.we_know_hawaii {
+		padding: 60px 0px;
+	}
+	.founderImage {
+		margin-top: 10px;
+	}
+	.serviceImage {
+		margin-top: 50px;
+	}
+	.servicesSections .section:nth-child(2n) .serviceImage {
+	    float: left;
+	    width: 100%;
+	    margin-bottom: 50px;
+	}
+	.serviceImage {
+		max-width: 100%;
+		width: 100%;
+	}
+	.google_map, .contact_information {
+		float: left;
+		width: 100%;
+	}
+	.how-it-works-page {
+	    float: left;
+	    width: 100%;
+	    margin-top: 40px;
+	}
+	.how-it-works-form p, .how-it-works-form span {
+		padding-left: 0;
+	}
+	.how-it-works-form {
+		margin-left: 0;
+	}
+	.how-it-works-form p.half, .how-it-works-form p {
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.contact_us .how-it-works-form input[type="submit"] {
+		width: 200px
+		margin-top: 10px;
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.footer_nav li {
+		width: 100%;
+		text-align: center;
+	}
+	.footer_nav li a {
+		padding: 5px 0px;
+	}
+	.we_know_hawaii h2 {
+	    font-size: 25px;
+	    line-height: 30px;
+	}
+	.page-heading h1 {
+		font-size: 30px;
+	}
+	.page_title {
+		height: 250px;
+	}
+	.navbar-toggle {
+	    background: transparent;
+	    position: absolute;
+	    right: 10px;
+	    top: -44px;
+	}
+	.navbar-toggle .icon-bar {
+		background: #fff;
+	}
+	#myNavbar {
+	    float: left;
+	    width: 100%;
+	    background: #333;
+	    margin-top: 13px;
+	}
+
+	/*--- navigation --*/
+	.site-header .col-md-9, .site-header .col-md-3 {
+		width: 100%;
+	}
+	.stickyHeader .navbar {
+		padding: 2px 0px 7px 0px;
+	}
+	.serviceText h2 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.mobileBanner {
+		display: block !important;
+		width: 100%;
+		float: left;
+	}
+	.home-slider div#myCarousel {
+	    display: none;
+	}
+}

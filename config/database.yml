@@ -1,7 +1,7 @@
   development:
     adapter: postgresql
     encoding: utf8
-    database: medit8
-    username: techverx
+    database: green
+    username: postgres
     password: techverx
     host: localhost
